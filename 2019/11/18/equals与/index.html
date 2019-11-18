@@ -7,10 +7,10 @@
 
     
 
-    <title>Archives: 2019/11 | Hexo</title>
+    <title>两数之和 | Hexo</title>
     <meta name="author" content="zhangxu" />
     <meta name="keywords" content="" />
-    <meta name="description" content="" />
+    <meta name="description" content="给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素。示例:给定 nums = [2, 7, 11, 15], target = 9因为 nums[0] + nums[1] = 2 + 7 = 9所以返回 [0, 1]来源：力扣（LeetCode）链接：https://leetcode-cn.com/problems/two-sum方..." />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
 
@@ -73,7 +73,7 @@
                 <span class="nav-text">标签</span>
             </a>
         
-            <a class="nav-item active" href="/archives">
+            <a class="nav-item" href="/archives">
                 <span class="nav-text">归档</span>
             </a>
         
@@ -93,6 +93,8 @@
     <div id="aside-inner" class="aside-inner">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit"><i class="icon-search-stroke"></i></button><input type="hidden" name="sitesearch" value="https://github.com/Diobailandu/Diobailandu.github.io.git"></form>
 
+        
+        
         
         
 
@@ -151,108 +153,70 @@
 
         <div id="content" class="content">
             <div id="wrapper" class="wrapper" style="max-width: 800px">
-                
-
-
+                <article class="article" itemscope itemprop="blogPost">
     
-    
-    
-    
-    
-    <section class="archives-wrap">
-    <div class="archive-year-wrap">
-    <a href="/archives/2019/11" class="page-hd">
-        2019/11
-    </a>
-    </div>
-    <ol class="archives">
-    
-
-    <li class="archive-section-item">
+    <header class="article-header">
         
-<article class="archive-article archive-type-post">
-    <div class="archive-article-inner">
-        <header class="archive-article-header">
-            <a class="archive-article-link" href="/2019/11/18/equals%E4%B8%8E/">两数之和</a>
-            <span class="archive-article-date">
-                (<a class="article-date" href="/archives/2019/11">
-    
-    <time datetime="2019-11-18T13:00:47.000Z" itemprop="datePublished">11/18</time>
-</a>
-)
-            </span>
-        </header>
-    </div>
-</article>
-    </li>
-
-    
-    
-
-    <li class="archive-section-item">
+        <h1 itemprop="name">
+            两数之和
+        </h1>
         
-<article class="archive-article archive-type-post">
-    <div class="archive-article-inner">
-        <header class="archive-article-header">
-            <a class="archive-article-link" href="/2019/11/18/wode/">wode</a>
-            <span class="archive-article-date">
-                (<a class="article-date" href="/archives/2019/11">
+        <div class="article-meta clearfix">
+            <a class="article-date" href="https://github.com/Diobailandu/Diobailandu.github.io.git/2019/11/18/equals%E4%B8%8E/index.html">
     
-    <time datetime="2019-11-18T08:57:44.000Z" itemprop="datePublished">11/18</time>
+    <i class="icon-calendar"></i>
+    
+    <time datetime="2019-11-18T13:00:47.000Z" itemprop="datePublished">2019-11-18</time>
 </a>
-)
-            </span>
-        </header>
-    </div>
-</article>
-    </li>
 
-    
-    
+            
+<div class="article-tag-list">
+    <i class="icon-tag"></i>
+    <a class="article-tag-link" href="/tags/java-%E7%AE%97%E6%B3%95/" rel="tag">java 算法</a>
+</div>
 
-    <li class="archive-section-item">
+
+        </div>
+    </header>
+    
+    <section class="article-body markdown-body">
         
-<article class="archive-article archive-type-post">
-    <div class="archive-article-inner">
-        <header class="archive-article-header">
-            <a class="archive-article-link" href="/2019/11/17/myfirst/"> myfirst</a>
-            <span class="archive-article-date">
-                (<a class="article-date" href="/archives/2019/11">
-    
-    <time datetime="2019-11-17T12:16:50.000Z" itemprop="datePublished">11/17</time>
-</a>
-)
-            </span>
-        </header>
-    </div>
-</article>
-    </li>
+        <p>给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。</p>
+<p>你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素。</p>
+<p>示例:</p>
+<p>给定 nums = [2, 7, 11, 15], target = 9</p>
+<p>因为 nums[0] + nums[1] = 2 + 7 = 9<br>所以返回 [0, 1]</p>
+<p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/two-sum" target="_blank" rel="noopener">https://leetcode-cn.com/problems/two-sum</a><br>方法一:暴力法<br>class solution{<br>    public int[] twosum(int[] nums,int target){<br>        for(i=0;i&lt;nums.length;i++){<br>            for(int j=i+1;j&lt;nums.length;j++){<br>                if(nums[j]==target-nums[i]){<br>                    return new init[] {i,j};<br>                }<br>            }<br>        }<br>        throw new IllegalArgumentExxeption(“No two sum solution”);<br>    }<br>}<br>时间复杂度O(n2)<br>方法二：两遍哈希<br>class Solution {<br>    public int[] twoSum(int[] nums, int target) {<br>        Map&lt;Integer, Integer&gt; map = new HashMap&lt;&gt;();<br>        for (int i = 0; i &lt; nums.length; i++) {<br>            map.put(nums[i], i);<br>        }<br>        for (int i = 0; i &lt; nums.length; i++) {<br>            int complement = target - nums[i];<br>            if (map.containsKey(complement) &amp;&amp; map.get(complement) != i) {<br>                return new int[] { i, map.get(complement) };<br>            }<br>        }<br>        throw new IllegalArgumentException(“No two sum solution”);<br>    }<br>}<br>O(n)<br>方法3：一遍哈希<br>class Solution {<br>    public int[] twoSum(int[] nums, int target) {<br>        Map&lt;Integer, Integer&gt; map = new HashMap&lt;&gt;();<br>        for (int i = 0; i &lt; nums.length; i++) {<br>            int complement = target - nums[i];<br>            if (map.containsKey(complement)) {<br>                return new int[] { map.get(complement), i };<br>            }<br>            map.put(nums[i], i);<br>        }<br>        throw new IllegalArgumentException(“No two sum solution”);<br>    }<br>}<br>O(n)</p>
 
-    
-    
-
-    <li class="archive-section-item">
         
-<article class="archive-article archive-type-post">
-    <div class="archive-article-inner">
-        <header class="archive-article-header">
-            <a class="archive-article-link" href="/2019/11/17/hello-world/">Hello World</a>
-            <span class="archive-article-date">
-                (<a class="article-date" href="/archives/2019/11">
-    
-    <time datetime="2019-11-17T09:54:14.470Z" itemprop="datePublished">11/17</time>
-</a>
-)
-            </span>
-        </header>
-    </div>
+    </section>
 </article>
-    </li>
 
 
-</ol></section>
+
+<a id="pagenext" href="/2019/11/18/wode/" class="article-next" title="wode"><i class="icon-arrow-right"></i></a>
 
 
+
+
+<div class="comments">
+    <div id="comments"></div>
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+    new Gitalk({
+        clientID: "7fbe80427f54741e289f",
+        clientSecret: "f34ed5fd92e54c9000bd37ba951948cb939deff5",
+        repo: "Diobailandu.github.io",
+        owner: "Diobailandu",
+        admin: ["Diobailandu"],
+        id: "2019/11/18/equals与",
+        distractionFreeMode: true,
+        title: "两数之和",
+        body: "https://github.com/Diobailandu/Diobailandu.github.io.git/2019/11/18/equals%E4%B8%8E/",
+        labels: ["java 算法"]
+    }).render('comments');
+    </script>
+</div>
 
 
             </div>
@@ -316,6 +280,31 @@
         }
     });
     </script>
+    
+        <script src="/js/scrollspy.min.js"></script>
+        <script type="text/javascript">
+        $(document.body).scrollspy({target: '#aside-inner'});
+
+        $(window).on('resize', function() {
+            var hw = $('#header').width();
+            var ww = $('#wrapper').width();
+            var space = ($(this).width() - hw - ww) / 2 / 2;
+
+            var pageprev = $('#pageprev');
+            var pagenext = $('#pagenext');
+            var avg = (pageprev.width() + pagenext.width()) / 2
+
+            if(space > avg) {
+                var len = space - avg / 2;
+                var styles = {position: 'fixed', top: '50%', marginTop: - (pageprev.width() + pagenext.width()) / 4}
+                pageprev.css($.extend({left: hw + len}, styles));
+                pagenext.css($.extend({right: len}, styles));
+            } else {
+                pageprev.removeAttr('style');
+                pagenext.removeAttr('style');
+            }
+        }).trigger('resize');
+        </script>
     
 
 </body>
