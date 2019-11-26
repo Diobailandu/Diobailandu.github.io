@@ -54,7 +54,7 @@
 <meta property="og:site_name" content="Diobailandu的博客">
 <meta property="og:description" content="两数相加题目：给出两个非空的链表用来表示两个非负的整数。其中它们各自的位数是按照逆序的方式存储的，并且它们的每个节点只能存储。一位数字。如果，我们将这两个数相加起来，则会返回一个新的链表来表示它们的和。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-26T02:42:26.694Z">
+<meta property="og:updated_time" content="2019-11-26T08:20:53.705Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="https://github.com/Diobailandu/Diobailandu.github.io.git/2019/11/20/11-20/">
@@ -156,7 +156,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives<span class="badge">7</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives<span class="badge">8</span></a>
 
   </li>
   </ul>
@@ -215,7 +215,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-11-26 10:42:26" itemprop="dateModified" datetime="2019-11-26T10:42:26+08:00">2019-11-26</time>
+                <time title="Modified: 2019-11-26 16:20:53" itemprop="dateModified" datetime="2019-11-26T16:20:53+08:00">2019-11-26</time>
               </span>
 
           
@@ -232,6 +232,9 @@
         <h3 id="两数相加"><a href="#两数相加" class="headerlink" title="两数相加"></a>两数相加</h3><p>题目：给出两个非空的链表用来表示两个非负的整数。其中它们各自的位数是按照逆序的方式存储的，并且它们的每个节点只能存储。一位数字。如果，我们将这两个数相加起来，则会返回一个新的链表来表示它们的和。</p>
 <a id="more"></a>
 <p>伪代码如下：<br>    * 将当前结点初始化为返回链表的哑节点。<br>    * 将进位carry初始化为0.<br>    * 将p和q分别初始化为l1和l2的头部。<br>    * </p>
+<!-- more -->
+
+
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> ListNode <span class="title">addTwoNumbers</span><span class="params">(ListNode l1, ListNode l2)</span> </span>&#123;</span><br><span class="line">        ListNode dummyhead=<span class="keyword">new</span> ListNode(<span class="number">0</span>);</span><br><span class="line">        ListNode p=l1,q=l2,curr=dummyhead;</span><br><span class="line">        <span class="keyword">int</span> carry =<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (p!=<span class="keyword">null</span> || q!==<span class="keyword">null</span>)&#123;</span><br><span class="line">        	<span class="keyword">int</span> x=(p!==<span class="keyword">null</span>)? p.val:<span class="number">0</span>;</span><br><span class="line">        	<span class="keyword">int</span> y = (q != <span class="keyword">null</span>) ? q.val : <span class="number">0</span>;</span><br><span class="line">        	<span class="keyword">int</span> sum = carry + x + y;</span><br><span class="line">        	carry = sum / <span class="number">10</span>;</span><br><span class="line">     	    curr.next = <span class="keyword">new</span> ListNode(sum % <span class="number">10</span>);<span class="comment">//实际存入链表的值sum%10</span></span><br><span class="line">        	curr = curr.next;</span><br><span class="line">        	<span class="keyword">if</span> (p != <span class="keyword">null</span>) p = p.next;</span><br><span class="line">        	<span class="keyword">if</span> (q != <span class="keyword">null</span>) q = q.next;</span><br><span class="line">        	&#125;</span><br><span class="line">        <span class="keyword">if</span> (carry &gt; <span class="number">0</span>) &#123;</span><br><span class="line">        	curr.next = <span class="keyword">new</span> ListNode(carry);</span><br><span class="line">    	&#125;</span><br><span class="line">    	<span class="keyword">return</span> dummyhead.next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <hr>
@@ -332,7 +335,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-count">8</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
