@@ -49,12 +49,12 @@
   <meta name="description" content="判断链表的有效节点数123456789101112public static int getlength(node head)&amp;#123;	if(head.next==null)&amp;#123;		return 0;	&amp;#125;	int length=0;	node cur=head.next;	while(cur!=null)&amp;#123;		length++;		cur=cur.next;	&amp;#1">
 <meta name="keywords" content="java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="链表面试">
+<meta property="og:title" content="链表">
 <meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;Diobailandu&#x2F;Diobailandu.github.io.git&#x2F;2019&#x2F;11&#x2F;21&#x2F;%E9%93%BE%E8%A1%A8%E9%9D%A2%E8%AF%95&#x2F;index.html">
 <meta property="og:site_name" content="Diobailandu的博客">
 <meta property="og:description" content="判断链表的有效节点数123456789101112public static int getlength(node head)&amp;#123;	if(head.next==null)&amp;#123;		return 0;	&amp;#125;	int length=0;	node cur=head.next;	while(cur!=null)&amp;#123;		length++;		cur=cur.next;	&amp;#1">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-21T11:14:21.721Z">
+<meta property="og:updated_time" content="2019-11-24T00:31:01.528Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="https://github.com/Diobailandu/Diobailandu.github.io.git/2019/11/21/%E9%93%BE%E8%A1%A8%E9%9D%A2%E8%AF%95/">
@@ -71,7 +71,7 @@
   };
 </script>
 
-  <title>链表面试 | Diobailandu的博客</title>
+  <title>链表 | Diobailandu的博客</title>
   
 
 
@@ -156,7 +156,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives<span class="badge">4</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives<span class="badge">7</span></a>
 
   </li>
   </ul>
@@ -198,7 +198,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          链表面试
+          链表
         </h1>
 
         <div class="post-meta">
@@ -207,10 +207,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2019-11-21 10:58:29 / Modified: 19:14:21" itemprop="dateCreated datePublished" datetime="2019-11-21T10:58:29+08:00">2019-11-21</time>
+              <time title="Created: 2019-11-21 10:58:29" itemprop="dateCreated datePublished" datetime="2019-11-21T10:58:29+08:00">2019-11-21</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-11-24 08:31:01" itemprop="dateModified" datetime="2019-11-24T08:31:01+08:00">2019-11-24</time>
+              </span>
 
           
 
@@ -233,14 +239,9 @@
 
 <hr>
 <h3 id="从尾到头打印单链表"><a href="#从尾到头打印单链表" class="headerlink" title="从尾到头打印单链表"></a>从尾到头打印单链表</h3><p>利用栈，将节点压入栈<code>stack</code>中，先入后出实现逆序打印。</p>
-<pre><code class="java"><span class="keyword">import</span> java.util.Stack;
-<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span>  <span class="title">reversepr</span><span class="params">(node head)</span></span>{
-    <span class="keyword">if</span>(head.next=<span class="keyword">null</span>){
-        <span class="keyword">return</span>;
-    }
-    stack&lt;node&gt;stack=<span class="keyword">new</span> stack
-}</code></pre>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Stack;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span>  <span class="title">reversepr</span><span class="params">(node head)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(head.next=<span class="keyword">null</span>)&#123;</span><br><span class="line">		<span class="keyword">return</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	stack&lt;node&gt;stack=<span class="keyword">new</span> stack&lt;node&gt;();</span><br><span class="line">	node cur=head.next;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<h3 id=""><a href="#" class="headerlink" title=""></a></h3>
     </div>
 
     
@@ -264,6 +265,9 @@
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
+                <a href="/2019/11/22/%E7%AE%97%E6%B3%95%E9%A2%98%E7%9B%AE1/" rel="prev" title="IO">
+                  IO <i class="fa fa-chevron-right"></i>
+                </a>
             </div>
           </div>
       </footer>
@@ -302,7 +306,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#判断链表的有效节点数"><span class="nav-number">1.</span> <span class="nav-text">判断链表的有效节点数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查找单链表的倒数第K个节点"><span class="nav-number">2.</span> <span class="nav-text">查找单链表的倒数第K个节点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#单链表的反转"><span class="nav-number">3.</span> <span class="nav-text">单链表的反转</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#从尾到头打印单链表"><span class="nav-number">4.</span> <span class="nav-text">从尾到头打印单链表</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#判断链表的有效节点数"><span class="nav-number">1.</span> <span class="nav-text">判断链表的有效节点数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查找单链表的倒数第K个节点"><span class="nav-number">2.</span> <span class="nav-text">查找单链表的倒数第K个节点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#单链表的反转"><span class="nav-number">3.</span> <span class="nav-text">单链表的反转</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#从尾到头打印单链表"><span class="nav-number">4.</span> <span class="nav-text">从尾到头打印单链表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">5.</span> <span class="nav-text"></span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -318,7 +322,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
